@@ -12,8 +12,8 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #=============
-#cl = LineClient()
-cl = LineClient(authToken='EyxjdRCCWHZvRcvb98r9.4SW+H8TowVbxasj4kd9Cgq.5IzgefU5+fNkGS9LpQ1DgInX5QyYviRVyoh+ySkZMCQ=')
+cl = LineClient()
+#cl = LineClient(authToken='EyxjdRCCWHZvRcvb98r9.4SW+H8TowVbxasj4kd9Cgq.5IzgefU5+fNkGS9LpQ1DgInX5QyYviRVyoh+ySkZMCQ=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
@@ -24,8 +24,8 @@ lineSettings = cl.getSettings()
 mid = cl.getProfile().mid
 responsename1 = cl.getProfile().displayName
 
-#ki = LineClient()
-ki = LineClient(authToken='EyCMqzhQzoV8MtLv2r9e.+jkW9+RmeVa5eWQ4sEctpG.zJ1U7VNw7MbG5/XlaMfXu0gZm5+IXNnMxE+sJwIiVpE=')
+ki = LineClient()
+#ki = LineClient(authToken='EyCMqzhQzoV8MtLv2r9e.+jkW9+RmeVa5eWQ4sEctpG.zJ1U7VNw7MbG5/XlaMfXu0gZm5+IXNnMxE+sJwIiVpE=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
@@ -35,24 +35,24 @@ Amid = ki.getProfile().mid
 responsename2 = ki.getProfile().displayName
 
 #kk = LineClient()
-kk = LineClient(authToken='Eyu6GxYkFwQfWPCfE5kd.2/2G/wzDrPWD4ENd74KV3q.1nUt15F5vvxLWNTDqf3Wm4FGxlzzPTKLwxsqZH7gBk0=')
-kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
-lineProfile = kk.getProfile()
-lineSettings = kk.getSettings()
-Bmid = kk.getProfile().mid
-responsename3 = kk.getProfile().displayName
+#kk = LineClient(authToken='Eyu6GxYkFwQfWPCfE5kd.2/2G/wzDrPWD4ENd74KV3q.1nUt15F5vvxLWNTDqf3Wm4FGxlzzPTKLwxsqZH7gBk0=')
+#kk.log("Auth Token : " + str(kk.authToken))
+#channel2 = LineChannel(kk)
+#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#lineProfile = kk.getProfile()
+#lineSettings = kk.getSettings()
+#Bmid = kk.getProfile().mid
+#responsename3 = kk.getProfile().displayName
 
 #kc = LineClient()
-kc = LineClient(authToken='EyfE4xZVT5vxJ7J24scc.wnAlloDplFCBchY9W0jHRa.2R9kdBXjYR5g2s3m+wqPMVp+uaJrDA+fg6/ROQVXISQ=')
-kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
-kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
-lineProfile = kc.getProfile()
-lineSettings = kc.getSettings()
-Cmid = kc.getProfile().mid
-responsename4 = kc.getProfile().displayName
+#kc = LineClient(authToken='EyfE4xZVT5vxJ7J24scc.wnAlloDplFCBchY9W0jHRa.2R9kdBXjYR5g2s3m+wqPMVp+uaJrDA+fg6/ROQVXISQ=')
+#kc.log("Auth Token : " + str(kc.authToken))
+#channel3 = LineChannel(kc)
+#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#lineProfile = kc.getProfile()
+#lineSettings = kc.getSettings()
+#Cmid = kc.getProfile().mid
+#responsename4 = kc.getProfile().displayName
 
 #km = LineClient()
 #km = LineClient(authToken='EwtLXMBBN6daPAoGz901.CT6/NHqQBWYrABNDHhJOWq.WZEfbtFXW5kb7pl6n9+HZ9KuSbt+6uiGe3WHFl/PviZ0=')
@@ -74,15 +74,15 @@ responsename4 = kc.getProfile().displayName
 #Emid = kb.getProfile().mid
 #responsename6 = kb.getProfile().displayName
 
-#sw = LineClient()
+sw = LineClient()
 #sw = LineClient(authToken='EvhD7rlI4FsSG4mjarXe.fi6AOZ9NS4Fsm3ey6B9rlG.IqporEXQK+RvUBPmwanuqAym2EBaTTbbN5tNNduoGIQ=')
-#sw.log("Auth Token : " + str(sw.authToken))
-#channel6 = LineChannel(sw)
-#sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
-#lineProfile = sw.getProfile()
-#lineSettings = sw.getSettings()
-#Zmid = sw.getProfile().mid
-#responsename7 = sw.getProfile().displayName
+sw.log("Auth Token : " + str(sw.authToken))
+channel6 = LineChannel(sw)
+sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
+lineProfile = sw.getProfile()
+lineSettings = sw.getSettings()
+Zmid = sw.getProfile().mid
+responsename7 = sw.getProfile().displayName
 
 print("---LOGIN SUCCES---")
 
@@ -91,9 +91,9 @@ owner = ["u1249c600ed5713961da8b8c0bf9ba3ff"]
 admin = ["u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff"]
 staff = ["u1249c600ed5713961da8b8c0bf9ba3ff"]
 
-KAC = [cl,ki,kk,kc]
-ABC = [ki,kk,kc]
-Bots = [mid,Amid,Bmid,Cmid]
+KAC = [cl,ki]
+ABC = [ki]
+Bots = [mid,Amid,Zmid]
 Saints = owner + admin + creator + staff
 
 protectqr = []
@@ -534,9 +534,9 @@ def atend():
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "• help1「 " + key + " 」jangn typo kuy\n\n" + \
-                  "「🈴」 " + key + "Help\n" + \
-                  "「🈴」 " + key + "Help2\n" + \
+    helpMessage = "  ??????� " + key + " You Bot\n\n" + \
+                  "「🈴」 " + key + "??????\n" + \
+                  "「🈴」 " + key + "??????2\n" + \
                   "「🈴」 " + key + "Me\n" + \
                   "「🈴」 " + key + "Mid「@」\n" + \
                   "「🈴」 " + key + "Steal「@」\n" + \
@@ -553,14 +553,14 @@ def help():
                   "「🈴」 " + key + "Speed/Sp\n" + \
                   "「🈴」 " + key + "Respontime\n" + \
                   "「🈴」 " + key + "Tagall\n" + \
-                  "「🈴」 " + key + "Joinall\n" + \
-                  "「🈴」 " + key + "Byeall\n" + \
+                  "「🈴」 " + key + "??\n" + \
+                  "「🈴」 " + key + "???\n" + \
                   "「🈴」 " + key + "Byeme\n" + \
                   "「🈴」 " + key + "Leave「Namagrup」\n" + \
                   "「🈴」 " + key + "Ginfo\n" + \
-                  "「🈴」 " + key + "Open\n" + \
-                  "「🈴」 " + key + "Close\n" + \
-                  "「🈴」 " + key + "Url\n" + \
+                  "「🈴」 " + key + "????????\n" + \
+                  "「🈴」 " + key + "???????\n" + \
+                  "「🈴」 " + key + "????\n" + \
                   "「🈴」 " + key + "Gruplist\n" + \
                   "「🈴」 " + key + "Open「nomer」\n" + \
                   "「🈴」 " + key + "Close「nomer」\n" + \
@@ -620,20 +620,20 @@ def help():
                   "「🈴」 " + key + "Get-date「tgl-bln-thn」\n" + \
                   "\n「 Setting Protection 」\n• Use「 " + key + " 」jangan typo kuy\n\n" + \
                   "「🈴」 " + key + "Notag「on/off」\n" + \
-                  "「🈴」 " + key + "Allprotect「on/off」\n" + \
-                  "「🈴」 " + key + "Protecturl「on/off」\n" + \
-                  "「🈴」 " + key + "Protectjoin「on/off」\n" + \
-                  "「🈴」 " + key + "Protectkick「on/off」\n" + \
-                  "「🈴」 " + key + "Protectinvite「on/off」\n" + \
-                  "「🈴」 " + key + "Protectcancel「on/off」\n" + \
-                  "「🈴」 " + key + "Protectantijs「on/off」\n" + \
+                  "「🈴」 " + key + "??????「????/???」\n" + \
+                  "「🈴」 " + key + "???????「????/???」\n" + \
+                  "「🈴」 " + key + "???????「????/???」\n" + \
+                  "「🈴」 " + key + "??????「????/???」\n" + \
+                  "「🈴」 " + key + "???????「????/???」\n" + \
+                  "「🈴」 " + key + "?????「????/???」\n" + \
+                  "「🈴」 " + key + "???js「????/???」\n" + \
                   "「🈴」 " + key + "Antijs stay\n" + \
-                  "「🈴」 " + key + "Ghost 「on/off」\n" + \
-                  "「🈴」 " + key + "Ghost join\n" + \
-                  "「🈴」 " + key + "Ghost bye\n" + \
+                  "「🈴」 " + key + "?? 「????/???」\n" + \
+                  "「🈴」 " + key + "????\n" + \
+                  "「🈴」 " + key + "?????\n" + \
                   "\n「 Setting Kicker 」\n• Use「 " + key + " 」jangan typo kuy\n\n" + \
                   "「🈴」 " + key + "Kick「on/off」\n" + \
-                  "「🈴」 " + key + "Nk「@」\n" + \
+                  "「🈴」 " + key + "??「@」\n" + \
                   "「🈴」 " + key + "Kick「@」\n" + \
                   "「🈴」 " + key + "Kickall \n" + \
                   "\n「 Setting User 」\n• Use「 " + key + " 」jangan typo kuy\n\n" + \
@@ -643,13 +643,13 @@ def help():
                   "「🈴」 " + key + "Respontime「on/off」\n" + \
                   "「🈴」 " + key + "Timeline「on/off」\n" + \
                   "「🈴」 " + key + "Contact「on/off」\n" + \
-                  "「🈴」 " + key + "Autojoin「on/off」\n" + \
+                  "「🈴」 " + key + "????「????/???」\n" + \
                   "「🈴」 " + key + "Autoadd「on/off」\n" + \
                   "「🈴」 " + key + "Welcome「on/off」\n" + \
                   "「🈴」 " + key + "Autoleave「on/off」\n" + \
-                  "「🈴」 " + key + "Jointicket「on/off」\n" + \
+                  "「🈴」 " + key + "???????「????/???」\n" + \
                   "\n「 For Admin 」\n• Use「 " + key + " 」jangan typo kuy\n\n" + \
-                  "「🈴」 " + key + "Selfbot「on/off」\n" + \
+                  "「🈴」 " + key + "???「????/???」\n" + \
                   "「🈴」 " + key + "Bot:on\n" + \
                   "「🈴」 " + key + "Bot:expell\n" + \
                   "「🈴」 " + key + "Staff:on\n" + \
@@ -1856,17 +1856,17 @@ def bot(op):
                            if text.lower() == video:
                               cl.sendVideo(msg.to, videos[video])
                         cmd = command(text)
-                        if cmd == "selfbot on":
+                        if cmd == "??? ????":
                             if msg._from in admin:
                                 wait["selfbot"] = True
                                 cl.sendText(msg.to, "Selfbot diaktifkan")
                                 
-                        elif cmd == "selfbot off":
+                        elif cmd == "??? ???":
                             if msg._from in admin:
                                 wait["selfbot"] = False
                                 cl.sendText(msg.to, "Selfbot dinonaktifkan")
                                             
-                        elif cmd == "help":
+                        elif cmd == "??????":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 helpMessage = help()
@@ -1887,7 +1887,7 @@ def bot(op):
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
 
-                        elif cmd == "help2":
+                        elif cmd == "??????2":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 helpMessage1 = helpbot()
@@ -2331,7 +2331,7 @@ def bot(op):
                                 except:
                                     pass
                                     
-                        elif cmd.startswith("joinall "):
+                        elif cmd.startswith("?? "):
                           if msg._from in admin:
                             separate = text.split(" ")
                             number = text.replace(separate[0] + " ","")
@@ -2797,7 +2797,7 @@ def bot(op):
                                    ma += "╠ " + str(a) + ". " +G.name+ "\n"
                                kb.sendMessage(msg.to,"╔══[ GROUP LIST ]\n║\n"+ma+"║\n╚══[ Total「"+str(len(gid))+"」Groups ]")
 
-                        elif cmd == "open":
+                        elif cmd == "????????":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 if msg.toType == 2:
@@ -2806,7 +2806,7 @@ def bot(op):
                                    cl.updateGroup(X)
                                    cl.sendMessage(msg.to, "Url Opened")
 
-                        elif cmd == "close":
+                        elif cmd == "???????":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 if msg.toType == 2:
@@ -2815,7 +2815,7 @@ def bot(op):
                                    cl.updateGroup(X)
                                    cl.sendMessage(msg.to, "Url Closed")
 
-                        elif cmd == "url":
+                        elif cmd == "????":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 if msg.toType == 2:
@@ -3092,7 +3092,7 @@ def bot(op):
                                 sendMention4(msg.to, sender, "「Ready」 ", "")
                                 sendMention5(msg.to, sender, "「Ready」 ", "")
                                 
-                        elif cmd == "joinall":
+                        elif cmd == "??":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -3110,7 +3110,7 @@ def bot(op):
                                 G.preventedJoinByTicket = True
                                 cl.updateGroup(G)
 
-                        elif cmd == "byeall":
+                        elif cmd == "???":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -3209,7 +3209,7 @@ def bot(op):
                                 G.preventedJoinByTicket = True
                       #          kb.updateGroup(G)
 
-                        elif cmd == "ghost join":
+                        elif cmd == "????":
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
                                 ginfo = cl.getGroup(msg.to)
@@ -3222,7 +3222,7 @@ def bot(op):
                                 G.preventedJoinByTicket = True
                                 sw.updateGroup(G)
 
-                        elif cmd == "ghost bye":
+                        elif cmd == "?????":
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
                                 sw.sendText(msg.to, "Bye bye fams "+str(G.name))
@@ -4492,10 +4492,10 @@ def bot(op):
                              cl.sendText(to, ret_)
                              
 #===========Protection============#
-                        elif 'Welcome ' in msg.text:
+                        elif '??????? ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Welcome ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in welcome:
                                        msgs = "Welcome Msg sudah aktif"
                                   else:
@@ -4503,7 +4503,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "「 Status Welcome 」\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in welcome:
                                          welcome.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4512,10 +4512,10 @@ def bot(op):
                                          msgs = "Welcome Msg sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「 Status Welcome 」\n" + msgs)
 
-                        elif 'Protecturl ' in msg.text:
+                        elif '??????? ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protecturl ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in protectqr:
                                        msgs = "Protect url sudah aktif"
                                   else:
@@ -4523,7 +4523,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "「 Status Protect Url 」\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in protectqr:
                                          protectqr.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4532,10 +4532,10 @@ def bot(op):
                                          msgs = "Protect url sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「 Status Protect Url 」\n" + msgs)
 
-                        elif 'Protectkick ' in msg.text:
+                        elif '?????? ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectkick ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in protectkick:
                                        msgs = "Protect kick sudah aktif"
                                   else:
@@ -4543,7 +4543,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "「 Status Protect kick 」\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in protectkick:
                                          protectkick.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4552,10 +4552,10 @@ def bot(op):
                                          msgs = "Protect kick sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「 Status Protect kick 」\n" + msgs)
 
-                        elif 'Protectjoin ' in msg.text:
+                        elif '??????? ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectjoin ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in protectjoin:
                                        msgs = "Protect join sudah aktif"
                                   else:
@@ -4563,7 +4563,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "「 Status Protect Join 」\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in protectjoin:
                                          protectjoin.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4572,10 +4572,10 @@ def bot(op):
                                          msgs = "Protect join sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「 Status Protect Join 」\n" + msgs)
 
-                        elif 'Protectcancel ' in msg.text:
+                        elif '????? ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectcancel ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in protectcancel:
                                        msgs = "Protect cancel sudah aktif"
                                   else:
@@ -4583,7 +4583,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "「 Status Protect Cancel 」\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in protectcancel:
                                          protectcancel.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4592,10 +4592,10 @@ def bot(op):
                                          msgs = "Protect cancel sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「 Status Protect Cancel 」\n" + msgs)
 
-                        elif 'Protectinvite ' in msg.text:
+                        elif '??????? ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectinvite ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in protectinvite:
                                        msgs = "Protect invite sudah aktif"
                                   else:
@@ -4603,7 +4603,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "「 Status Protect Invite 」\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in protectinvite:
                                          protectinvite.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4612,10 +4612,10 @@ def bot(op):
                                          msgs = "Protect invite sudah tidak aktif"
                                     cl.sendMessage(msg.to, "「 Status Protect Invite 」\n" + msgs)
                                     
-                        elif 'Protectantijs ' in msg.text:
+                        elif '???js ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Protectantijs ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in protectantijs:
                                        msgs = "Anti JS sudah aktif"
                                   else:
@@ -4623,7 +4623,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Anti JS Diaktifkan\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "Diaktifkan\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in protectantijs:
                                          protectantijs.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4632,10 +4632,10 @@ def bot(op):
                                          msgs = "Anti JS sudah tidak aktif"
                                     cl.sendMessage(msg.to, "Dinonaktifkan\n" + msgs)
                                     
-                        elif 'Ghost ' in msg.text:
+                        elif '?? ' in msg.text:
                            if msg._from in admin:
                               spl = msg.text.replace('Ghost ','')
-                              if spl == 'on':
+                              if spl == '????':
                                   if msg.to in ghost:
                                        msgs = "Ghost sudah aktif"
                                   else:
@@ -4643,7 +4643,7 @@ def bot(op):
                                        ginfo = cl.getGroup(msg.to)
                                        msgs = "Ghost Diaktifkan\nDi Group : " +str(ginfo.name)
                                   cl.sendMessage(msg.to, "Diaktifkan\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                     if msg.to in ghost:
                                          ghost.remove(msg.to)
                                          ginfo = cl.getGroup(msg.to)
@@ -4652,10 +4652,10 @@ def bot(op):
                                          msgs = "Ghost sudah tidak aktif"
                                     cl.sendMessage(msg.to, "Dinonaktifkan\n" + msgs) 
 
-                        elif 'Allprotect ' in msg.text:
+                        elif '?????? ' in msg.text:
                            if msg._from in admin:                             
                               spl = msg.text.replace('Allprotect ','')
-                              if spl == 'on':
+                              if spl == '????':
                                 #if wait["allprotect"] == True:
                                   if msg.to in protectqr:
                                        msgs = ""
@@ -4691,7 +4691,7 @@ def bot(op):
                                       msgs = "Status : [ ON ]\nDi Group : " +str(ginfo.name)
                                       msgs += "\nSemua protection diaktifkan"
                                   cl.sendMessage(msg.to, "「 Status Protection 」\n" + msgs)
-                              elif spl == 'off':
+                              elif spl == '???':
                                  #if wait["allprotect"] == False:
                                     if msg.to in protectqr:
                                          protectqr.remove(msg.to)
@@ -4728,7 +4728,7 @@ def bot(op):
                                          msgs += "\nSemua protection dimatikan"
                                     cl.sendMessage(msg.to, "「 Status Protection 」\n" + msgs)
 #===========KICKOUT============#
-                        elif ("Nk " in msg.text):
+                        elif ("?? " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -5020,13 +5020,13 @@ def bot(op):
                                 wait["detectMention"] = False
                                 cl.sendText(msg.to,"「 Status Respon 」\nAuto respon dinonaktifkan")
 
-                        elif cmd == "autojoin on" or text.lower() == 'autojoin on':
+                        elif cmd == "???? ????" or text.lower() == 'autojoin on':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["autoJoin"] = True
                                 cl.sendText(msg.to,"「 Status Autojoin 」\nAutojoin telah diaktifkan")
 
-                        elif cmd == "autojoin off" or text.lower() == 'autojoin off':
+                        elif cmd == "???? ???" or text.lower() == 'autojoin off':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["autoJoin"] = False
@@ -5080,13 +5080,13 @@ def bot(op):
                                 wait["stickerOn"] = False
                                 cl.sendText(msg.to,"「 Status Sticker Check 」\nSticker check dinonaktifkan")
 
-                        elif cmd == "jointicket on" or text.lower() == 'jointicket on':
+                        elif cmd == "??????? ????" or text.lower() == 'jointicket on':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 settings["autoJoinTicket"] = True
                                 sendMention(msg.to, sender, "「 Status Jointicket 」\nUser ", "\nSilahkan kirim link grupnya,\nJika sudah selesai, ketik jointicket off")
 
-                        elif cmd == "jointicket off" or text.lower() == 'jointicket off':
+                        elif cmd == "??????? ???" or text.lower() == 'jointicket off':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 settings["autoJoinTicket"] = False
