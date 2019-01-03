@@ -1,57 +1,100 @@
-# -*- coding: utf-8 -*-
-from linepy import*
-from akad.ttypes import Message
-from akad.ttypes import ContentType as Type
-from akad.ttypes import ChatRoomAnnouncementContents
-from akad.ttypes import ChatRoomAnnouncement
+# -*- coding: utf-8 -*- 
+import hck
+from hck import *
+from akad.ttypes import *
+from multiprocessing import Pool, Process
+from time import sleep
+import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, urllib, urllib.parse, ast, pytz, wikipedia, pafy, youtube_dl, atexit
+#import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia, html5lib
 from datetime import timedelta, date
 from datetime import datetime
-from time import sleep
 from bs4 import BeautifulSoup
-from humanfriendly import format_timespan, format_size, format_number, format_length
-import pytz, datetime, pafy, time, timeit, random, sys, ast, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, wikipedia
-from gtts import gTTS
 from googletrans import Translator
+import youtube_dl
+#=============
+cl = LineClient()
+#cl = LineClient(authToken='EyxjdRCCWHZvRcvb98r9.4SW+H8TowVbxasj4kd9Cgq.5IzgefU5+fNkGS9LpQ1DgInX5QyYviRVyoh+ySkZMCQ=')
+cl.log("Auth Token : " + str(cl.authToken))
+channel = LineChannel(cl)
+cl.log("Channel Access Token : " + str(channel.channelAccessToken))
+#poll = LinePoll(cl)
+#call = LineCall(cl)
+#lineProfile = cl.getProfile()
+#lineSettings = cl.getSettings()
+#mid = cl.getProfile().mid
+#responsename1 = cl.getProfile().displayName
 
-cl = LINE("")
-#cl.log("Auth Token : " + str(cl.authToken))
+ki = LineClient()
+#ki = LineClient(authToken='EyCMqzhQzoV8MtLv2r9e.+jkW9+RmeVa5eWQ4sEctpG.zJ1U7VNw7MbG5/XlaMfXu0gZm5+IXNnMxE+sJwIiVpE=')
+ki.log("Auth Token : " + str(ki.authToken))
+channel1 = LineChannel(ki)
+ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+#lineProfile = ki.getProfile()
+#lineSettings = ki.getSettingresponsename2 = ki.getProfile().displayName
 
-ki = LINE( )
-#ki.log("Auth Token : " + str(ki.authToken))
-
-#kk = LINE( )
+#kk = LineClient()
+#kk = LineClient(authToken='Eyu6GxYkFwQfWPCfE5kd.2/2G/wzDrPWD4ENd74KV3q.1nUt15F5vvxLWNTDqf3Wm4FGxlzzPTKLwxsqZH7gBk0=')
 #kk.log("Auth Token : " + str(kk.authToken))
+#channel2 = LineChannel(kk)
+#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#lineProfile = kk.getProfile()
+#lineSettings = kk.getSettings()
+#Bmid = kk.getProfile().mid
+#responsename3 = kk.getProfile().displayName
 
-#kc = LINE( )
+#kc = LineClient()
+#kc = LineClient(authToken='EyfE4xZVT5vxJ7J24scc.wnAlloDplFCBchY9W0jHRa.2R9kdBXjYR5g2s3m+wqPMVp+uaJrDA+fg6/ROQVXISQ=')
 #kc.log("Auth Token : " + str(kc.authToken))
+#channel3 = LineChannel(kc)
+#kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
+#lineProfile = kc.getProfile()
+#lineSettings = kc.getSettings()
+#Cmid = kc.getProfile().mid
+#responsename4 = kc.getProfile().displayName
 
-#km = LINE( )
+#km = LineClient()
+#km = LineClient(authToken='EwtLXMBBN6daPAoGz901.CT6/NHqQBWYrABNDHhJOWq.WZEfbtFXW5kb7pl6n9+HZ9KuSbt+6uiGe3WHFl/PviZ0=')
 #km.log("Auth Token : " + str(km.authToken))
+#channel4 = LineChannel(km)
+#km.log("Channel Access Token : " + str(channel4.channelAccessToken))
+#lineProfile = km.getProfile()
+#lineSettings = km.getSettings()
+#Dmid = km.getProfile().mid
+#responsename5 = km.getProfile().displayName
 
-#kb = LINE( )
+#kb = LineClient()
+#kb = LineClient(authToken='Ewhz7iKOuvXWxoyzGhBf.6bEDR9ZpL8Ya4o9i7PiXxW.HeMv0ytLJioIU1rE64Wvh5R6R1C3KtL5IKBtQmr6kjn4=')
 #kb.log("Auth Token : " + str(kb.authToken))
+#channel5 = LineChannel(kb)
+#kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
+#lineProfile = kb.getProfile()
+#lineSettings = kb.getSettings()
+#Emid = kb.getProfile().mid
+#responsename6 = kb.getProfile().displayName
 
-sw = LINE( )
-#sw.log("Auth Token : " + str(sw.authToken))
+sw = LineClient()
+#sw = LineClient(authToken='EvhD7rlI4FsSG4mjarXe.fi6AOZ9NS4Fsm3ey6B9rlG.IqporEXQK+RvUBPmwanuqAym2EBaTTbbN5tNNduoGIQ=')
+sw.log("Auth Token : " + str(sw.authToken))
+channel6 = LineChannel(sw)
+sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
+#lineProfile = sw.getProfile()
+#lineSettings = sw.getSettings()
+#Zmid = sw.getProfile().mid
+#responsename7 = sw.getProfile().displayName
 
-#==============================================================================================================
+poll = LinePoll(cl)
+call = cl
+creator = ["u1249c600ed5713961da8b8c0bf9ba3ff"]
+owner = ["u1249c600ed5713961da8b8c0bf9ba3ff"]
+admin = ["u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff","u1249c600ed5713961da8b8c0bf9ba3ff"]
+staff = ["u1249c600ed5713961da8b8c0bf9ba3ff"]
 mid = cl.getProfile().mid
-#==============================
-clMID = cl.profile.mid
-#==============================
-clProfile = cl.getProfile()
-#==============================================================================================================
-clSettings = cl.getSettings()
-#==============================================================================================================
-zxcv = clMID
-#==============================================================================================================
-clPoll = OEPoll(cl)
-#==============================================================================================================
-creator = ["u8a8d2dcb6dcda8b2a5951fd7740c6f6c"]
-owner = ["u8a8d2dcb6dcda8b2a5951fd7740c6f6c"]
-admin = ["u8a8d2dcb6dcda8b2a5951fd7740c6f6c"]
-staff = ["u8a8d2dcb6dcda8b2a5951fd7740c6f6c"]
-
+Amid = ki.getProfile().mid
+#Bmid = kk.getProfile().mid
+#Cmid = kc.getProfile().mid
+#Dmid = km.getProfile().mid
+#Emid = kb.getProfile().mid
+Zmid = sw.getProfile().mid
 KAC = [cl,ki]
 ABC = [ki]
 Bots = [mid,Amid,Zmid]
@@ -69,6 +112,12 @@ welcome = []
 
 msg_dict = {}
 msg_dict1 = {}
+
+responsename1 = ki.getProfile().displayName
+#responsename2 = kk.getProfile().displayName
+#responsename3 = kc.getProfile().displayName
+#responsename4 = km.getProfile().displayName
+#responsename5 = kb.getProfile().displayName
 
 settings = {
     "Picture":False,
